@@ -1,0 +1,75 @@
+/* Creative CSS for Campus Roommate Connect */
+
+:root {
+    --primary-color: #007bff; /* Blue */
+    --accent-color: #28a745;  /* Green */
+    --background-color: #f8f9fa;
+    --card-background: #ffffff;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    text-align: center;
+}
+
+h1 {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+/* Styling the University List */
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 15px; 
+    justify-content: center;
+}
+
+li {
+    background-color: var(--card-background);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s;
+    width: 250px; 
+}
+
+li:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: var(--primary-color); 
+    font-weight: 600;
+    font-size: 1.05em;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: var(--accent-color); 
+}
